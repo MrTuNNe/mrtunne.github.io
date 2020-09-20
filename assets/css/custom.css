@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: rgb(44, 46, 67);
+	color: white;
+	overflow-x: hidden;
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: -1;
+}
+
+.content {
+	z-index: 1;
+	min-height: 100vh;
+	position: static;
+}
+
+.about-me {
+	position: static;
+	background-color: white;
+	width: 100%;
+	min-height: 50vh;
+	height: 100%;
+	color: black;
+	z-index: 1;
+}
+
+.gallery {
+	position: static;
+	background-color: #eeeeee;
+	width: 100%;
+	min-height: 50vh;
+	height: 100%;
+	color: black;
+	z-index: 1;
+}
+
+.pt-mid {
+	padding-top: 25vh;
+}
+
+.mt-10 {
+	margin-top: 10%;
+}
+
+.mt-6 {
+	margin-top: 5.3%;
+}
+
+.btn {
+	border-radius: 0!important;
+	text-transform: uppercase;
+}
+
+.btn-red {
+	background: #CB356B;
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);
+	background: linear-gradient(to right, #BD3F32, #CB356B);
+	border: none;
+	color: white;
+}
+
+.btn-red:hover {
+	background: #CB356B;
+	background: -webkit-linear-gradient(to left, #BD3F32, #CB356B);
+	background: linear-gradient(to left, #BD3F32, #CB356B);
+	color: white;
+}
+
+.btn-outline-red {
+	border-color: #ff808c;
+	color: white;
+}
+
+.btn-outline-red:hover {
+	border-color: #ff808c;
+	background-color: #ff808c;
+	color: white;
+}
+
+.octagon {
+	clip-path: polygon(33.33% 0%, 66.66% 0%, 100% 33.33%, 100% 66.66%, 66.66% 100%, 33.33% 100%, 0 66.66%, 0 33.33%);
+}
+
+.text-orange {
+	color: #fbc647;
+}
+
+.cool-line {
+    margin-top: 3%;
+    border-top: 5px solid #c03d56;
+    height: 30px;
+    transform: skewY(1deg);    
+}
