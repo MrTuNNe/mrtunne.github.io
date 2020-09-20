@@ -32,7 +32,7 @@
     <div class="about-me">
       <div data-aos="fade-right" class="pt-5 pb-5">
         <div class="container">
-          <h2 class="text-uppercase">About me</h2>
+          <h2 class="text-uppercase"><i class="fas fa-info-circle d-sm-none"></i> About me</h2>
           <div class="row">
             <div class="col-md-6">
               <p>My name is <strong>Groza Samuel</strong> known as <strong>MrTuNNe</strong>. I started to learn about programming at a young age (<i>12</i>), the main reason for that was because I was interested in creating a personal website and <strong><i>Minecraft</i></strong> Server Plugins and Mods. With the time, my interest was bigger and bigger.</p>
@@ -40,7 +40,7 @@
               <p>I am from a small city from <strong>Romania</strong>, where programming is not promoted and there are no jobs for that category. Even with that, I never considered school as the main way of learning things. Pretty much everything I do know is because I was interested and I was searching for all the informations on the internet.</p>
               <p>I worked as a freelancer for about <strong>4 years</strong> (and I still do). But I am searching for a part/full time job, as I am bad at marketing.</p>
             </div>
-            <div class="col-md-6 text-center mt-10">
+            <div class="d-none d-sm-block col-md-6 text-center mt-10">
               <i class="fas fa-info-circle fa-5x"></i>
             </div>
           </div>
@@ -52,7 +52,75 @@
       <div data-aos="fade-left" class="pt-5 pb-5">
         <div class="container">
           <h2 class="text-uppercase">Portfolio</h2>
-
+          <small>(Are included only the latest projects)</small>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <div class="portfolio">
+                <img src="assets/img/gallery/sonicfast.png" class="img-fluid rounded" />
+                <div class="portfolio__info">
+                  <div class="container mt-7 text-center">
+                    <p><button class="btn btn-outline-red" onclick="info(1)">learn more</button></p>
+                    <p><a href="https://shield.sonicfast.io" class="btn btn-outline-red" target="__blank">visit website</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="portfolio">
+                <img src="assets/img/gallery/dasbot.png" class="img-fluid rounded" />
+                <div class="portfolio__info">
+                  <div class="container mt-7 text-center">
+                    <p><button class="btn btn-outline-red" onclick="info(2)">learn more</button></p>
+                    <p><a href="https://dash.dasbot.org/" class="btn btn-outline-red" target="__blank">visit website</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="portfolio">
+                <img src="assets/img/gallery/classicfood.png" class="img-fluid rounded" />
+                <div class="portfolio__info">
+                  <div class="container mt-7 text-center">
+                    <p><button class="btn btn-outline-red" onclick="info(3)">learn more</button></p>
+                    <p><a href="https://classicfood.ro/" class="btn btn-outline-red" target="__blank">visit website</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="portfolio">
+                <img src="assets/img/gallery/ralucaungureanu.png" class="img-fluid rounded" />
+                <div class="portfolio__info">
+                  <div class="container mt-7 text-center">
+                    <p><button class="btn btn-outline-red" onclick="info(4)">learn more</button></p>
+                    <p><a href="https://ralucaungureanu.com/" class="btn btn-outline-red" target="__blank">visit website</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="portfolio">
+                <img src="assets/img/gallery/poza4.png" class="img-fluid rounded" />
+                <div class="portfolio__info">
+                  <div class="container mt-7 text-center">
+                    <p><button class="btn btn-outline-red" onclick="info(5)">learn more</button></p>
+                    <p><a href="https://whadvice.com" class="btn btn-outline-red" target="__blank">visit website</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="portfolio">
+                <img src="assets/img/gallery/orlandokids.png" class="img-fluid rounded" />
+                <div class="portfolio__info">
+                  <div class="container mt-7 text-center">
+                    <p><button class="btn btn-outline-red" onclick="info(6)">learn more</button></p>
+                    <p><a href="https://orlandokids.ro/" class="btn btn-outline-red" target="__blank">visit website</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -63,6 +131,7 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="assets/js/typewriter.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
       particlesJS.load('main', 'particles.json');
       AOS.init({
@@ -75,6 +144,31 @@
          speed: 100
       });
       tw.type({script: 'I am MrTuNNe aka Groza Samuel!'});
+      var portfolio = {
+        1: {
+          "name": "SonicFast Shield",
+          "technologies": "PHP, MySQL, StackPath API, WHMCS API, Bootstrap 4",
+          "details": "SonicFast Shield is a reseller of StackPath for their WAF(Web Application Firewall) Protection. SonicFast Shield has everything you can have on StackPath, also free packages included in the platform. Clients can log in with their accounts from whmcs."
+        },
+        2: {
+          "name": "DASBot Dashboard",
+          "technologies": "Python, Flask, Discord OAuth, MySQL, Bootstrap 4",
+          "details": "DAS is a Bot for Discord. Recently, DAS decided to create a Web Dashboard for their users. The user can add custom commands and edit the settings for their guild." 
+        },
+        3: {
+          "name": "CLASSICFOOD",
+          "technologies": "PHP, Laravel, MySQL, Bootstrap 4",
+          "details": "CLASSICFOOD is restaurant-like website. Users can buy and and pay with the credit card for the food. After that the food will be delivered to their address." 
+        }
+      }
+      function info(id) {
+        Swal.fire({
+          title: portfolio[id].name,
+          showCloseButton: true,
+          html: `<p>Technologies used: <strong>${portfolio[id].technologies}</strong></p><p><i>${portfolio[id].details}</i></p>`,
+          showConfirmButton: false
+        });
+      }
     </script>
   </body>
 </html>
