@@ -132,3 +132,20 @@ body {
 	opacity: 1;
 }
 
+.form-control {
+	border-radius: 0;
+	height: calc(2.5em + .75rem + 2px);
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border-color: #CB356B;
+}
+
+.btn-bigger {
+	padding: .75rem .85rem;
+}
+
+.card {
+	border-radius: 0;
+}
