@@ -16,12 +16,14 @@ body {
 	height: 100vh;
 	position: fixed;
 	z-index: -1;
+	overflow: hidden;
 }
 
 .content {
 	z-index: 1;
 	min-height: 100vh;
 	position: static;
+	overflow: hidden;
 }
 
 .about-me, .skills {
@@ -32,6 +34,7 @@ body {
 	height: 100%;
 	color: black;
 	z-index: 1;
+	overflow: hidden;
 }
 
 .gallery, .contact {
@@ -42,6 +45,7 @@ body {
 	height: 100%;
 	color: black;
 	z-index: 1;
+	overflow: hidden;
 }
 
 .pt-mid {
